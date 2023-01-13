@@ -56,7 +56,7 @@ if (!empty($_POST['n1']) && !empty($_POST['n2'])) {
     if (isset($resultado) && $resultado != false) :
         echo $resultado;
     else :
-        echo "Introdusdfce los ndfgdfgúmerodss:";
+        echo "Introduce los números:";
     endif;
     ?>
 </body>
