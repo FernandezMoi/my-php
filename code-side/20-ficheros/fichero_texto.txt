@@ -1,0 +1,2 @@
+Hola soy el contenido de un archivo de texto,
+y yo la segunda linea del archivo*Texto escrito de función*Texto escrito de función<br>*Texto escrito de función<br/>*Texto escrito de función<br/>*Texto escrito de función<br/>*Texto escrito de función
