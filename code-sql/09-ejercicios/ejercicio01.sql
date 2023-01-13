@@ -1,5 +1,5 @@
 /* 
-1. Diseñar y crear la base de datos de un concesionario.
+1. Diseñar y Ccrear la base de datos de un concesionario.
  */
 
 CREATE DATABASE IF NOT EXISTS concesionario;
