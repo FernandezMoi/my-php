@@ -13,6 +13,16 @@ mysqli_query($conexion, "SET NAMES 'utf8'");
 $query = mysqli_query($conexion, "SELECT * FROM notas");
 
 while ($nota = mysqli_fetch_assoc($query)) {
-    echo "Título:" . $nota['titulo'] . "<br>";
-    echo "Descripción:" . $nota['descripcion'] . "<br>";
+    echo "Título: " . $nota['titulo'] . "<br>";
+    echo "Descripción: " . $nota['descripcion'] . "<br>";
 }
+
+//insertar en la bd
+//$sql = "INSERT INTO notas VALUES(null,'Desde el código PHP','Una nota insertada en VScode','admin')";
+//$insert = mysqli_query($conexion, $sql);
+
+/*if ($insert) {
+    echo "Nota insertada correctamente";
+} else {
+    echo "Error: " . mysqli_error($conexion);
+}*/
