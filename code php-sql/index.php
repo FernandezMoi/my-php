@@ -13,6 +13,6 @@ mysqli_query($conexion, "SET NAMES 'utf8'");
 $query = mysqli_query($conexion, "SELECT * FROM notas");
 
 while ($nota = mysqli_fetch_assoc($query)) {
-    echo $nota['titulo'] . "<br>";
-    echo $nota['descripcion'] . "<br>";
+    echo "Título:" . $nota['titulo'] . "<br>";
+    echo "Descripción:" . $nota['descripcion'] . "<br>";
 }
