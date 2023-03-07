@@ -1,56 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php
+require_once('includes/header.php');
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Videojuegos</title>
-</head>
+<!-- SIDEBAR -->
+<?php
+require_once('includes/aside.php');
+?>
 
-<body>
-    <!-- HEADER -->
-    <header>
-        <div id="logo.jpg">
-            <a href="index.php">
-                Blog de videojuegos
-            </a>
-        </div>
-
-        <!-- MENU -->
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.php">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Categoría 1</a>
-                </li>
-                <li>
-                    <a href="">Categoría 2</a>
-                </li>
-                <li>
-                    <a href="">Categoría 3</a>
-                </li>
-                <li>
-                    <a href="">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-
-    <!-- SIDEBAR -->
-
-    <!-- CAJA PRINCIPAL -->
-
-    <!-- FOOTER -->
-
-</body>
-
-</html>
+<!-- CAJA PRINCIPAL -->
+<div id="main">
+    <h1>Artículos</h1>
+    <article class="entry">
+        <a href="">
+            <h2>Título de la entrada</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to ma
+            </p>
+        </a>
+    </article>
+    <article class="entry">
+        <a href="">
+            <h2>Título de la entrada</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to ma
+            </p>
+        </a>
+    </article>
+    <article class="entry">
+        <a href="">
+            <h2>Título de la entrada</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to ma
+            </p>
+        </a>
+    </article>
+    <div id="ver-todas">
+        <a href="">Ver todas las entradas</a>
+    </div>
+</div>
+</div>
+<!-- FOOTER -->
+<?php
+require_once('includes/footer.php');
+?>
