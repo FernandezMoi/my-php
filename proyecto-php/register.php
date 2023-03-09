@@ -1,7 +1,9 @@
 <?php
-session_start();
 
 if (isset($_POST)) {
+
+    require_once('includes/connect.php');
+    session_start();
 
     //Recoger valores del formulario
     $name = isset($_POST['name']) ? $_POST['name'] : false;
@@ -46,8 +48,18 @@ if (isset($_POST)) {
     if (count($errors) == 0) {
         //INSERT user en la BBDD
         $insert_user = true;
+
+        $encrypt_password = password_hash($password, PASSWORD_BCRYPT, ['cost' => 4]);
+
+        $sql = "INSERT INTO usuarios VALUES(null,$name,$surname,$email,$encrypt_password, CURTDATE())";
+        $saveUser = mysqli_query($db, $saveUser);
+        if ($sql) {
+            $_SESSION['complete'] = 'El usuario se ha registrado correctamente';
+        } else {
+            $_SESSION['errors']['general'] = 'El usuario no se ha podido registrar';
+        }
     } else {
         $_SESSION['errors'] = $errors;
-        header('Location: index.php');
     }
 }
+header('Location: index.php');
